@@ -1,0 +1,12 @@
+{% extends "appcoder/padre.html" %}
+
+{% block titulo%} Coderhouse | Cursos {% endblock %}
+
+{% block contenidoQueCambia  %}
+<h1>Aca están listados todos los cursos</h1>
+
+{% for curso in cursos %}
+{{curso.nombre}} - {{curso.comision}}
+
+{% endfor %}
+{% endblock %}
